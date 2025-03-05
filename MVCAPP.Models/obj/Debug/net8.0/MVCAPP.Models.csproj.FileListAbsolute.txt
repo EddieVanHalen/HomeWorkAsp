@@ -1,0 +1,15 @@
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/bin/Debug/net8.0/MVCAPP.Models.deps.json
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/bin/Debug/net8.0/MVCAPP.Models.dll
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/bin/Debug/net8.0/MVCAPP.Models.pdb
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.xml
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.csproj.AssemblyReference.cache
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.GeneratedMSBuildEditorConfig.editorconfig
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.AssemblyInfoInputs.cache
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.AssemblyInfo.cs
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.csproj.CoreCompileInputs.cache
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.csproj.CopyComplete
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.dll
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/obj/Debug/net8.0/refint/MVCAPP.Models.dll
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.pdb
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/obj/Debug/net8.0/ref/MVCAPP.Models.dll

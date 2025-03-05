@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YwNMRzuQhDo=",
+  "success": true,
+  "projectFilePath": "/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/MVCAPP.Models.csproj",
+  "expectedPackageFiles": [
+    "/home/atillai/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.12/microsoft.aspnetcore.app.ref.8.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

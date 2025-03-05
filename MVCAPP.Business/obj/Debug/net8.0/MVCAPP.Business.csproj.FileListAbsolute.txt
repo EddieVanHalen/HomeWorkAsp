@@ -1,0 +1,17 @@
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/bin/Debug/net8.0/MVCAPP.Business.deps.json
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/bin/Debug/net8.0/MVCAPP.Business.dll
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/bin/Debug/net8.0/MVCAPP.Business.pdb
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/bin/Debug/net8.0/MVCAPP.Models.dll
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/bin/Debug/net8.0/MVCAPP.Models.pdb
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.xml
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.csproj.AssemblyReference.cache
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.GeneratedMSBuildEditorConfig.editorconfig
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.AssemblyInfoInputs.cache
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.AssemblyInfo.cs
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.csproj.CoreCompileInputs.cache
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.csproj.CopyComplete
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.dll
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/refint/MVCAPP.Business.dll
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.pdb
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/ref/MVCAPP.Business.dll

@@ -1,0 +1,39 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model MVCAPP.DTOs.LoginDTO
+@{
+    ViewData["Title"] = "Login";
+}
+
+@if (TempData.ContainsKey("Error"))
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["Error"]
+    </div>
+}
+
+
+<h1>Login</h1>
+
+
+<form method="post" asp-controller="Account" asp-action="Login">
+    <div class="form-group">
+        <label asp-for="@Model.Email"></label>
+        <input class="form-control" asp-for="@Model.Email">
+        <span asp-validation-for="@Model.Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Password"></label>
+        <input type="password" class="form-control" asp-for="@Model.Password">
+        <span asp-validation-for="@Model.Password" class="text-danger"></span>
+    </div>
+
+
+    <button type="submit" class="btn btn-success">Log in</button>
+</form>
+
+@section Scripts
+{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+
