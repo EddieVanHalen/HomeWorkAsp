@@ -58,11 +58,11 @@ public class AccountController : Controller
             return RedirectToAction(nameof(Register));
         }
         
-        // await _roleManager.CreateAsync(new IdentityRole("User"));
-        await _userManager.AddToRoleAsync(appUser, "User");
+        await _roleManager.CreateAsync(new IdentityRole("Admin"));
+        await _userManager.AddToRoleAsync(appUser, "Admin");
 
         TempData["Success"] = "User added successfully";
-        return RedirectToAction("Index", "Home");
+        return RedirectToAction("Index", "Songs");
     }
 
     #endregion

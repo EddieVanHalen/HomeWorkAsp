@@ -5,7 +5,6 @@ using MVCAPP.DataAccess;
 using MVCAPP.DataAccess.Repositories;
 using MVCAPP.Domain.Models.Abstractions.Albums;
 using MVCAPP.Domain.Models.Entities;
-using MVCAPP.Models;
 using MVCAPP.Models.Abstractions;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
@@ -26,7 +25,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 #region Repositories
 
-builder.Services.AddScoped<IBandsRepository, BandsRepository>();
 builder.Services.AddScoped<IArtistsRepository, ArtistsRepository>();
 builder.Services.AddScoped<IAlbumsRepository, AlbumsRepository>();
 builder.Services.AddScoped<ISongsRepository, SongsRepository>();
@@ -35,7 +33,6 @@ builder.Services.AddScoped<ISongsRepository, SongsRepository>();
 
 #region Services
 
-builder.Services.AddScoped<IBandsService, BandsService>();
 builder.Services.AddScoped<IArtistsService, ArtistsService>();
 builder.Services.AddScoped<IAlbumsService, AlbumsService>();
 builder.Services.AddScoped<ISongsService, SongsService>();
@@ -76,7 +73,12 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Songs}/{action=Index}");
+
+app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Songs}/{action=Index}/{id?}");
+    pattern: "{controller=Songs}/{action=Index}");
+
 
 app.Run();

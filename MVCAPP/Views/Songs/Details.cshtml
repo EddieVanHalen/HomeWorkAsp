@@ -20,10 +20,6 @@
     <div class="card text-center p-5 border-0">
         <img class="card-img-top w-50 text-center" src="@Model.ImageUrl" alt="Card image cap">
         <h1 class="display-4">@Model.Title</h1>
-        @{
-            Console.WriteLine($"---------------------------------------- {@Model.ArtistId}");
-        }
-        
         <a class="h-25" asp-controller="Artists" asp-action="Details" asp-route-id="@Model.ArtistId">@Model.ArtistName</a>
     </div>
 </div>

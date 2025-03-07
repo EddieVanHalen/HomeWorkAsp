@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MVCAPP
 build_property.RootNamespace = MVCAPP
@@ -17,6 +25,10 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = /home/atillai/RiderProjects/MVCAPP/MVCAPP
 build_property._RazorSourceGeneratorDebug = 
+
+[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Areas/Admin/Views/Songs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU29uZ3MvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
 
 [/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9BY2Nlc3NEZW5pZWQuY3NodG1s
@@ -40,10 +52,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Artists/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJ0aXN0cy9JbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Bands/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFuZHMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Home/Index.cshtml]
