@@ -1,0 +1,27 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model MVCAPP.DTOs.BookDTO
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<style>
+    .card-img-top {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    a:hover{
+        cursor: pointer;
+    }
+</style>
+
+<div class="container-fluid d-flex justify-content-center align-items-center full-page mt-5">
+    <div class="card text-center p-5 border-0">
+        <img class="card-img-top w-50 text-center" src="@Model.CoverImageUrl" alt="Card image cap">
+        <h1 class="display-4">@Model.Title</h1>
+        <p style="color : #c2c0c0" class="h-75 lead">@Model.Writer</p>
+        <p style="color : #c2c0c0" class="h-75 lead">@Model.Genre</p>
+    </div>
+</div>

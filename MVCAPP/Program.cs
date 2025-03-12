@@ -3,9 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using MVCAPP.Business.Services;
 using MVCAPP.DataAccess;
 using MVCAPP.DataAccess.Repositories;
-using MVCAPP.Domain.Models.Abstractions.Albums;
+using MVCAPP.Domain.Models.Abstractions.Books;
+using MVCAPP.Domain.Models.Abstractions.Writers;
 using MVCAPP.Domain.Models.Entities;
-using MVCAPP.Models.Abstractions;
+using MVCAPP.Infrastructure.Abstractions;
+using MVCAPP.Infrastructure.Services;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -25,17 +27,16 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 #region Repositories
 
-builder.Services.AddScoped<IArtistsRepository, ArtistsRepository>();
-builder.Services.AddScoped<IAlbumsRepository, AlbumsRepository>();
-builder.Services.AddScoped<ISongsRepository, SongsRepository>();
+builder.Services.AddScoped<IWritersRepository, WritersRepository>();
+builder.Services.AddScoped<IBooksRepository, BooksRepository>();
 
 #endregion
 
 #region Services
 
-builder.Services.AddScoped<IArtistsService, ArtistsService>();
-builder.Services.AddScoped<IAlbumsService, AlbumsService>();
-builder.Services.AddScoped<ISongsService, SongsService>();
+builder.Services.AddScoped<IWritersService, WritersService>();
+builder.Services.AddScoped<IBooksService, BooksService>();
+builder.Services.AddScoped<IFileManager, FileManager>();
 
 #endregion
 
@@ -74,11 +75,11 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "areas",
-    pattern: "{area:exists}/{controller=Songs}/{action=Index}");
+    pattern: "{area:exists}/{controller=Books}/{action=Index}");
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Songs}/{action=Index}");
+    pattern: "{controller=Books}/{action=Index}");
 
 
 app.Run();

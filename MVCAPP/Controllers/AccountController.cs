@@ -1,9 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using MVCAPP.DataAccess;
 using MVCAPP.Domain.Models.Entities;
 using MVCAPP.DTOs;
-using MVCAPP.Models;
 
 namespace MVCAPP.Controllers;
 
@@ -36,7 +34,7 @@ public class AccountController : Controller
     {
         if (!ModelState.IsValid)
         {
-            TempData["Error"] = "Invalid model state";
+            TempData["danger"] = "Invalid model state";
             return RedirectToAction(nameof(Register));
         }
 
@@ -47,28 +45,30 @@ public class AccountController : Controller
         };
 
         IdentityResult result = await _userManager.CreateAsync(appUser, register.Password);
-        
+
         if (!result.Succeeded)
         {
             foreach (IdentityError error in result.Errors)
             {
                 Console.WriteLine(error.Description);
             }
-            TempData["Error"] = "Error while saving the user";
+
+            TempData["danger"] = "Error while saving the user";
             return RedirectToAction(nameof(Register));
         }
-        
+
         await _roleManager.CreateAsync(new IdentityRole("Admin"));
         await _userManager.AddToRoleAsync(appUser, "Admin");
 
-        TempData["Success"] = "User added successfully";
+        TempData["success"] = "User added successfully";
         return RedirectToAction("Index", "Songs");
     }
 
     #endregion
-    
-    
+
+
     #region Login
+
     [HttpGet]
     public IActionResult Login()
     {
@@ -80,7 +80,7 @@ public class AccountController : Controller
     {
         if (!ModelState.IsValid)
         {
-            TempData["Error"] = "Invalid model state";
+            TempData["danger"] = "Invalid model state";
             return RedirectToAction(nameof(Login));
         }
 
@@ -88,7 +88,7 @@ public class AccountController : Controller
 
         if (appUser is null)
         {
-            TempData["Error"] = "User not found";
+            TempData["danger"] = "User not found";
             return RedirectToAction(nameof(Login));
         }
 
@@ -96,14 +96,14 @@ public class AccountController : Controller
 
         if (!isChecked)
         {
-            TempData["Error"] = "Wrong credentials";
+            TempData["danger"] = "Wrong credentials";
             return RedirectToAction(nameof(Login));
         }
 
-        await _signInManager.SignInAsync(appUser,false);
+        await _signInManager.SignInAsync(appUser, false);
 
-        TempData["Success"] = "User Signed In successfully";
-        return RedirectToAction("Index", "Home");
+        TempData["success"] = "User Signed In successfully";
+        return RedirectToAction("Index", "Books");
     }
 
     #endregion

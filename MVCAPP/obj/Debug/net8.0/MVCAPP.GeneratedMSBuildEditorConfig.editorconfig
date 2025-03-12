@@ -25,9 +25,23 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = /home/atillai/RiderProjects/MVCAPP/MVCAPP
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Areas/Admin/Views/Songs/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU29uZ3MvSW5kZXguY3NodG1s
+[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Areas/Admin/Views/Books/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQm9va3MvQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Areas/Admin/Views/Books/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQm9va3MvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Areas/Admin/Views/Books/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQm9va3MvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Areas/Admin/Views/Books/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQm9va3MvVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Account/AccessDenied.cshtml]
@@ -42,36 +56,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Albums/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxidW1zL0luZGV4LmNzaHRtbA==
+[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Books/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va3MvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Artists/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJ0aXN0cy9EZXRhaWxzLmNzaHRtbA==
+[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Books/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va3MvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Artists/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJ0aXN0cy9JbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Shared/_AlertPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BbGVydFBhcnRpYWxWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Songs/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU29uZ3MvRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Songs/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU29uZ3MvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/_ViewImports.cshtml]

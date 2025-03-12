@@ -25,15 +25,18 @@
     <ItemGroup>
       <ProjectReference Include="..\MVCAPP.DataAccess\MVCAPP.DataAccess.csproj" />
       <ProjectReference Include="..\MVCAPP.Business\MVCAPP.Business.csproj" />
+      <ProjectReference Include="..\MVCAPP.Infrastructure\MVCAPP.Infrastructure.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <_ContentIncludedByDefault Remove="Views\Bands\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\Privacy.cshtml" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Areas\Admin\Data\" />
-      <Folder Include="Areas\Admin\Models\" />
+      <Folder Include="wwwroot\images\" />
     </ItemGroup>
 
 </Project>

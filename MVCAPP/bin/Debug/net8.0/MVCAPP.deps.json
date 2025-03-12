@@ -10,6 +10,7 @@
         "dependencies": {
           "MVCAPP.Business": "1.0.0",
           "MVCAPP.DataAccess": "1.0.0",
+          "MVCAPP.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.13",
           "Microsoft.EntityFrameworkCore": "8.0.13",
           "Microsoft.EntityFrameworkCore.Design": "8.0.13",
@@ -1731,6 +1732,11 @@
           "MVCAPP.DataAccess.dll": {}
         }
       },
+      "MVCAPP.Infrastructure/1.0.0": {
+        "runtime": {
+          "MVCAPP.Infrastructure.dll": {}
+        }
+      },
       "MVCAPP.Models/1.0.0": {
         "runtime": {
           "MVCAPP.Models.dll": {}
@@ -2716,6 +2722,11 @@
       "sha512": ""
     },
     "MVCAPP.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MVCAPP.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -28,3 +28,4 @@
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/obj/Debug/net8.0/refint/MVCAPP.DataAccess.dll
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.pdb
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/obj/Debug/net8.0/ref/MVCAPP.DataAccess.dll
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.sourcelink.json

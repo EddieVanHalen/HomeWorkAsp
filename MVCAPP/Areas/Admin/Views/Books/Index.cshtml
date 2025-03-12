@@ -1,0 +1,39 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using MVCAPP.Domain.Models.Entities
+@model List<MVCAPP.Domain.Models.Entities.Book>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "_Layout";
+}
+
+@await Html.PartialAsync("_AlertPartialView")
+
+<style>
+    .album-card .card-img-top, .song-card .card-img-top {
+        display: block;
+        margin: 0 auto;
+        object-fit: cover;
+        height: 200px;
+        width: 100%;
+    }
+</style>
+
+<div class="container my-5">
+    <h1>Songs</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (Book pair in @Model)
+        {
+            <div class="col">
+                <div class="card mt-4 song-card" style="width: 18rem;">
+                    <img class="card-img-top" src="@pair.CoverImageUrl" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">@pair.Title</h5>
+                        <a asp-controller="Books" asp-action="Details" asp-route-id="@pair.Id"
+                           class="btn btn-primary">Details...</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

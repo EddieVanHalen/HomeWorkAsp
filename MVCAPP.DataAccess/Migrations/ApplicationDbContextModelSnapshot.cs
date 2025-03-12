@@ -8,7 +8,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace ClassLibrary1.Migrations
+namespace MVCAPP.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -25,7 +25,7 @@ namespace ClassLibrary1.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("MVCAPP.DataAccess.Entities.AlbumEntity", b =>
+            modelBuilder.Entity("MVCAPP.DataAccess.Entities.BookEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -33,10 +33,10 @@ namespace ClassLibrary1.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("ArtistId")
-                        .HasColumnType("integer");
+                    b.Property<string>("CoverImageUrl")
+                        .HasColumnType("text");
 
-                    b.Property<string>("ImageUrl")
+                    b.Property<string>("Genre")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -44,17 +44,17 @@ namespace ClassLibrary1.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("WriterId")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("ArtistId");
+                    b.HasIndex("WriterId");
 
-                    b.HasIndex("Title")
-                        .IsUnique();
-
-                    b.ToTable("Albums", (string)null);
+                    b.ToTable("Books", (string)null);
                 });
 
-            modelBuilder.Entity("MVCAPP.DataAccess.Entities.ArtistEntity", b =>
+            modelBuilder.Entity("MVCAPP.DataAccess.Entities.WriterEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -62,70 +62,20 @@ namespace ClassLibrary1.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("BandId")
-                        .HasColumnType("integer");
-
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("BandId");
-
-                    b.HasIndex("Name")
-                        .IsUnique();
-
-                    b.ToTable("Artists", (string)null);
-                });
-
-            modelBuilder.Entity("MVCAPP.DataAccess.Entities.BandEntity", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Title")
+                    b.Property<string>("Surname")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Title")
-                        .IsUnique();
-
-                    b.ToTable("Bands", (string)null);
-                });
-
-            modelBuilder.Entity("MVCAPP.DataAccess.Entities.SongEntity", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("AlbumId")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AlbumId");
-
-                    b.HasIndex("Title")
-                        .IsUnique();
-
-                    b.ToTable("Songs", (string)null);
+                    b.ToTable("Writers", (string)null);
                 });
 
             modelBuilder.Entity("MVCAPP.Domain.Models.Entities.ApiUser", b =>
@@ -327,35 +277,15 @@ namespace ClassLibrary1.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("MVCAPP.DataAccess.Entities.AlbumEntity", b =>
+            modelBuilder.Entity("MVCAPP.DataAccess.Entities.BookEntity", b =>
                 {
-                    b.HasOne("MVCAPP.DataAccess.Entities.ArtistEntity", "Artist")
-                        .WithMany("Albums")
-                        .HasForeignKey("ArtistId")
+                    b.HasOne("MVCAPP.DataAccess.Entities.WriterEntity", "Writer")
+                        .WithMany("Books")
+                        .HasForeignKey("WriterId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Artist");
-                });
-
-            modelBuilder.Entity("MVCAPP.DataAccess.Entities.ArtistEntity", b =>
-                {
-                    b.HasOne("MVCAPP.DataAccess.Entities.BandEntity", "Band")
-                        .WithMany("Artists")
-                        .HasForeignKey("BandId");
-
-                    b.Navigation("Band");
-                });
-
-            modelBuilder.Entity("MVCAPP.DataAccess.Entities.SongEntity", b =>
-                {
-                    b.HasOne("MVCAPP.DataAccess.Entities.AlbumEntity", "Album")
-                        .WithMany("Songs")
-                        .HasForeignKey("AlbumId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Album");
+                    b.Navigation("Writer");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -409,19 +339,9 @@ namespace ClassLibrary1.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("MVCAPP.DataAccess.Entities.AlbumEntity", b =>
+            modelBuilder.Entity("MVCAPP.DataAccess.Entities.WriterEntity", b =>
                 {
-                    b.Navigation("Songs");
-                });
-
-            modelBuilder.Entity("MVCAPP.DataAccess.Entities.ArtistEntity", b =>
-                {
-                    b.Navigation("Albums");
-                });
-
-            modelBuilder.Entity("MVCAPP.DataAccess.Entities.BandEntity", b =>
-                {
-                    b.Navigation("Artists");
+                    b.Navigation("Books");
                 });
 #pragma warning restore 612, 618
         }

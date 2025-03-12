@@ -249,3 +249,5 @@
 /home/atillai/RiderProjects/MVCAPP/MVCAPP/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
 /home/atillai/RiderProjects/MVCAPP/MVCAPP/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Security.Cryptography.ProtectedData.dll
 /home/atillai/RiderProjects/MVCAPP/MVCAPP/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll
+/home/atillai/RiderProjects/MVCAPP/MVCAPP/bin/Debug/net8.0/MVCAPP.Infrastructure.dll
+/home/atillai/RiderProjects/MVCAPP/MVCAPP/bin/Debug/net8.0/MVCAPP.Infrastructure.pdb

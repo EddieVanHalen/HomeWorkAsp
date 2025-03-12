@@ -1,0 +1,8 @@
+@{
+    foreach (var item in TempData)
+    {
+        <div class="alert alert-@item.Key">
+            @item.Value
+        </div>
+    }
+}

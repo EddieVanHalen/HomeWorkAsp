@@ -2403,6 +2403,16 @@
           "bin/placeholder/MVCAPP.DataAccess.dll": {}
         }
       },
+      "MVCAPP.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MVCAPP.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MVCAPP.Infrastructure.dll": {}
+        }
+      },
       "MVCAPP.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -6533,6 +6543,11 @@
       "path": "../MVCAPP.DataAccess/MVCAPP.DataAccess.csproj",
       "msbuildProject": "../MVCAPP.DataAccess/MVCAPP.DataAccess.csproj"
     },
+    "MVCAPP.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../MVCAPP.Infrastructure/MVCAPP.Infrastructure.csproj",
+      "msbuildProject": "../MVCAPP.Infrastructure/MVCAPP.Infrastructure.csproj"
+    },
     "MVCAPP.Models/1.0.0": {
       "type": "project",
       "path": "../MVCAPP.Models/MVCAPP.Models.csproj",
@@ -6543,6 +6558,7 @@
     "net8.0": [
       "MVCAPP.Business >= 1.0.0",
       "MVCAPP.DataAccess >= 1.0.0",
+      "MVCAPP.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.13",
       "Microsoft.EntityFrameworkCore >= 8.0.13",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.13",
@@ -6582,6 +6598,9 @@
             },
             "/home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/MVCAPP.DataAccess.csproj": {
               "projectPath": "/home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/MVCAPP.DataAccess.csproj"
+            },
+            "/home/atillai/RiderProjects/MVCAPP/MVCAPP.Infrastructure/MVCAPP.Infrastructure.csproj": {
+              "projectPath": "/home/atillai/RiderProjects/MVCAPP/MVCAPP.Infrastructure/MVCAPP.Infrastructure.csproj"
             }
           }
         }

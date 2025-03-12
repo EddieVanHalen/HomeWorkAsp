@@ -13,3 +13,4 @@
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/obj/Debug/net8.0/refint/MVCAPP.Models.dll
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.pdb
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/obj/Debug/net8.0/ref/MVCAPP.Models.dll
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.sourcelink.json
