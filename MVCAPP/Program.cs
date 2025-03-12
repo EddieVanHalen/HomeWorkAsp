@@ -27,14 +27,12 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 #region Repositories
 
-builder.Services.AddScoped<IWritersRepository, WritersRepository>();
 builder.Services.AddScoped<IBooksRepository, BooksRepository>();
 
 #endregion
 
 #region Services
 
-builder.Services.AddScoped<IWritersService, WritersService>();
 builder.Services.AddScoped<IBooksService, BooksService>();
 builder.Services.AddScoped<IFileManager, FileManager>();
 

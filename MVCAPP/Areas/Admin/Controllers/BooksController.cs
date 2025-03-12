@@ -47,7 +47,7 @@ public class BooksController : Controller
         }
 
         //
-        int result = await _booksService.AddAsync(1, request.Title, request.Genre, path);
+        int result = await _booksService.AddAsync(request.Title, request.AuthorFullName, request.Genre, path);
 
         if (result == 0)
         {
@@ -69,8 +69,6 @@ public class BooksController : Controller
             return RedirectToAction(nameof(Index));
         }
 
-        Writer bookWriter = await _writersService.GetByIdAsync(book.WriterId);
-
         // if (bookWriter.Id == 0)
         // {
         //     TempData["danger"] = "Author Not Found";
@@ -80,11 +78,10 @@ public class BooksController : Controller
         BookDTO dto  = new BookDTO
         {
             Title = book.Title,
-            Writer = bookWriter.Name + " " +bookWriter.Surname,
             CoverImageUrl = book.CoverImageUrl,
-            WriterId = bookWriter.Id,
             Genre = book.Genre,
             Id = book.Id,
+            WriterName = book.AuthorFullName
         };
 
         return View(dto);

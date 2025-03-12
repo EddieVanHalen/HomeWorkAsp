@@ -33,9 +33,7 @@ public class BooksController : Controller
             TempData["danger"] = "Book Not Found";
             return RedirectToAction(nameof(Index));
         }
-        
-        Writer bookWriter = await _writersService.GetByIdAsync(book.WriterId);
-        
+
         // if (bookWriter.Id == 0)
         // {
         //     TempData["danger"] = "Author Not Found";
@@ -45,9 +43,8 @@ public class BooksController : Controller
         BookDTO dto  = new BookDTO
         {
             Title = book.Title,
-            Writer = bookWriter.Name + " " +bookWriter.Surname,
             CoverImageUrl = book.CoverImageUrl,
-            WriterId = bookWriter.Id,
+            WriterName = book.AuthorFullName,
             Genre = book.Genre,
             Id = book.Id,
         };
