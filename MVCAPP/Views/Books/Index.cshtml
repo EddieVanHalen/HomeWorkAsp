@@ -1,4 +1,4 @@
-@model List<Book>
+@model BookDTO
 
 @{
     ViewBag.Title = "Index";
@@ -21,7 +21,7 @@
 <div class="container my-5">
     <h1>Songs</h1>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        @foreach (Book book in @Model)
+        @foreach (Book book in @Model.Books)
         {
             <div class="col">
                 <div class="card mt-4 song-card" style="width: 18rem;">
@@ -29,10 +29,55 @@
                     <div class="card-body">
                         <h5 class="card-title">@book.Title</h5>
                         <a asp-controller="Books" asp-action="Details" asp-route-id="@book.Id"
-                            class="btn btn-primary">Details...</a>
+                           class="btn btn-primary">Details...</a>
                     </div>
                 </div>
             </div>
         }
     </div>
+
+    <div class="mt-5">
+        <ul class="pagination">
+            @if (Model.PageInfo.CurrentPage - 1 >= 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-controller="Books" asp-action="Index"
+                       asp-route-page="@(Model.PageInfo.CurrentPage - 1)">&laquo;</a>
+                </li>
+            }
+
+
+            @for (int i = 1; i <= Model.PageInfo.TotalPages; i++)
+            {
+                if (i == Model.PageInfo.CurrentPage)
+                {
+                    <li class="page-item active">
+                        <a class="page-link" asp-controller="Books" asp-action="Index" asp-route-page="@i">
+                            @i
+                        </a>
+                    </li>
+                }
+                else
+                {
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Books" asp-action="Index" asp-route-page="@i">
+                            @i
+                        </a>
+                    </li>
+                }
+            }
+
+            @{
+                if (Model.PageInfo.CurrentPage + 1 <= Model.PageInfo.TotalPages)
+                {
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Books" asp-action="Index"
+                           asp-route-page="@(Model.PageInfo.CurrentPage + 1)">&raquo;</a>
+                    </li>
+                }
+            }
+
+        </ul>
+    </div>
+
 </div>

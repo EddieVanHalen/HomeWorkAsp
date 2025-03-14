@@ -25,7 +25,9 @@ public class BooksController : Controller
     [HttpGet]
     public async Task<ActionResult> Index()
     {
-        return View(await _booksService.GetAllAsync());
+        // return View(await _booksService.GetAllAsync());
+
+        return null;
     }
 
     [HttpGet]
@@ -72,16 +74,7 @@ public class BooksController : Controller
             return RedirectToAction(nameof(Index));
         }
 
-        BookDTO dto = new BookDTO
-        {
-            Title = book.Title,
-            CoverImageUrl = book.CoverImageUrl,
-            Genre = book.Genre,
-            Id = book.Id,
-            WriterName = book.AuthorFullName,
-        };
-
-        return View(dto);
+        return View(book);
     }
 
     [HttpGet]

@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using MVCAPP.Domain.Models.Abstractions.Books;
 using MVCAPP.Domain.Models.Entities;
 using MVCAPP.DTOs;
+using MVCAPP.Models;
 
 namespace MVCAPP.Controllers;
 
@@ -15,11 +16,26 @@ public class BooksController : Controller
     }
 
     [HttpGet]
-    public async Task<ActionResult> Index()
+    public async Task<ActionResult> Index(string? filter, int itemsPerPage = 6, int page = 1)
     {
-        List<Book> books = await _booksService.GetAllAsync();
-
-        return View(books);
+        (List<Book> books, int totalItems) = await _booksService.GetAllAsync(itemsPerPage, page);
+        
+        Console.Write($"-------------------------- Total Items: {totalItems}\n");
+        Console.Write($"-------------------------- Total Pages: {(int)Math.Ceiling(totalItems / (double)itemsPerPage)}\n");
+    
+        BookDTO dto = new BookDTO()
+        {
+            Books = books,
+            PageInfo = new PageInfo()
+            {
+                CurrentPage = page,
+                ItemsPerPage = itemsPerPage,
+                TotalItems = totalItems,
+                TotalPages = (int)Math.Ceiling(totalItems / (double)itemsPerPage)
+            }
+        };
+        
+        return View(dto);
     }
 
     [HttpGet]
@@ -32,22 +48,7 @@ public class BooksController : Controller
             TempData["danger"] = "Book Not Found";
             return RedirectToAction(nameof(Index));
         }
-
-        // if (bookWriter.Id == 0)
-        // {
-        //     TempData["danger"] = "Author Not Found";
-        //     return RedirectToAction(nameof(Index));
-        // }
-
-        BookDTO dto = new BookDTO
-        {
-            Title = book.Title,
-            CoverImageUrl = book.CoverImageUrl,
-            WriterName = book.AuthorFullName,
-            Genre = book.Genre,
-            Id = book.Id,
-        };
-
-        return View(dto);
+        
+        return View(book);
     }
 }

@@ -1,4 +1,4 @@
-@model BookDTO
+@model Book
 
 @{
     ViewBag.Title = "title";
@@ -20,7 +20,7 @@
     <div class="card text-center p-5 border-0">
         <img class="card-img-top w-50 text-center" src="~/images/@Model.CoverImageUrl" alt="Card image cap">
         <h1 class="display-4">@Model.Title</h1>
-        <p style="color : #c2c0c0" class="h-75 lead">@Model.WriterName</p>
+        <p style="color : #c2c0c0" class="h-75 lead">@Model.AuthorFullName</p>
         <p style="color : #c2c0c0" class="h-75 lead">@Model.Genre</p>
     </div>
 </div>
