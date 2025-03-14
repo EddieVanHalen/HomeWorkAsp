@@ -25,23 +25,25 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = /home/atillai/RiderProjects/MVCAPP/MVCAPP
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
 [/home/atillai/RiderProjects/MVCAPP/MVCAPP/Areas/Admin/Views/Books/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQm9va3MvQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Areas/Admin/Views/Books/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQm9va3MvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/atillai/RiderProjects/MVCAPP/MVCAPP/Areas/Admin/Views/Books/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQm9va3MvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Areas/Admin/Views/Books/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQm9va3MvSW5kZXguY3NodG1s
+[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Areas/Admin/Views/Books/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQm9va3MvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Areas/Admin/Views/Books/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQm9va3MvVXBkYXRlLmNzaHRtbA==
+[/home/atillai/RiderProjects/MVCAPP/MVCAPP/Areas/Admin/Views/Books/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQm9va3MvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/atillai/RiderProjects/MVCAPP/MVCAPP/Views/Account/AccessDenied.cshtml]

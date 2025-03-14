@@ -22,12 +22,23 @@ public class BooksService : IBooksService
         return await _repository.GetByIdAsync(id);
     }
 
-    public async Task<int> AddAsync(string title, string authorFullName, string genres, string? coverImageUrl)
+    public async Task<int> AddAsync(
+        string title,
+        string authorFullName,
+        string genres,
+        string? coverImageUrl
+    )
     {
         return await _repository.AddAsync(title, authorFullName, genres, coverImageUrl);
     }
 
-    public async Task<int> UpdateAsync(int id, string title, string authorFullName, string genre, string? coverImageUrl)
+    public async Task<int> UpdateAsync(
+        int id,
+        string title,
+        string authorFullName,
+        string genre,
+        string? coverImageUrl
+    )
     {
         return await _repository.UpdateAsync(id, title, authorFullName, genre, coverImageUrl);
     }

@@ -8,7 +8,8 @@
 @await Html.PartialAsync("_AlertPartialView")
 
 <style>
-    .album-card .card-img-top, .song-card .card-img-top {
+    .album-card .card-img-top,
+    .song-card .card-img-top {
         display: block;
         margin: 0 auto;
         object-fit: cover;
@@ -20,15 +21,15 @@
 <div class="container my-5">
     <h1>Songs</h1>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        @foreach (Book pair in @Model)
+        @foreach (Book book in @Model)
         {
             <div class="col">
                 <div class="card mt-4 song-card" style="width: 18rem;">
-                    <img class="card-img-top" src="@pair.CoverImageUrl" alt="Card image cap">
+                    <img class="card-img-top" src="~/images/@book.CoverImageUrl" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">@pair.Title</h5>
-                        <a asp-controller="Books" asp-action="Details" asp-route-id="@pair.Id"
-                           class="btn btn-primary">Details...</a>
+                        <h5 class="card-title">@book.Title</h5>
+                        <a asp-controller="Books" asp-action="Details" asp-route-id="@book.Id"
+                            class="btn btn-primary">Details...</a>
                     </div>
                 </div>
             </div>

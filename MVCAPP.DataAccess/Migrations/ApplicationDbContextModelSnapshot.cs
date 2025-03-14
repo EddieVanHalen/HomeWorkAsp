@@ -33,6 +33,10 @@ namespace MVCAPP.DataAccess.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("AuthorFullName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("CoverImageUrl")
                         .HasColumnType("text");
 
@@ -44,38 +48,9 @@ namespace MVCAPP.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("WriterId")
-                        .HasColumnType("integer");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("WriterId");
 
                     b.ToTable("Books", (string)null);
-                });
-
-            modelBuilder.Entity("MVCAPP.DataAccess.Entities.WriterEntity", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("ImageUrl")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Surname")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Writers", (string)null);
                 });
 
             modelBuilder.Entity("MVCAPP.Domain.Models.Entities.ApiUser", b =>
@@ -277,17 +252,6 @@ namespace MVCAPP.DataAccess.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("MVCAPP.DataAccess.Entities.BookEntity", b =>
-                {
-                    b.HasOne("MVCAPP.DataAccess.Entities.WriterEntity", "Writer")
-                        .WithMany("Books")
-                        .HasForeignKey("WriterId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Writer");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -337,11 +301,6 @@ namespace MVCAPP.DataAccess.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("MVCAPP.DataAccess.Entities.WriterEntity", b =>
-                {
-                    b.Navigation("Books");
                 });
 #pragma warning restore 612, 618
         }

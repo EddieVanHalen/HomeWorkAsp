@@ -9,13 +9,13 @@ public class FileManager : IFileManager
     {
         string imageName = @$"{Guid.NewGuid().ToString()}{file.FileName}";
 
-        var path = Path.Combine("wwwroot", "images", imageName); 
+        string path = Path.Combine("wwwroot", "images", imageName);
 
         using (var fs = new FileStream(path, FileMode.OpenOrCreate))
         {
             await file.CopyToAsync(fs);
         }
-        
+
         return imageName;
     }
 
@@ -23,7 +23,7 @@ public class FileManager : IFileManager
     {
         string path = Path.Combine("wwwroot", "images", fileName);
 
-        if(File.Exists(path)) 
+        if (File.Exists(path))
         {
             File.Delete(path);
         }

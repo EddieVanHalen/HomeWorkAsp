@@ -13,8 +13,11 @@ public class AccountController : Controller
 
     private readonly RoleManager<IdentityRole> _roleManager;
 
-    public AccountController(UserManager<ApiUser> userManager, SignInManager<ApiUser> signinManager,
-        RoleManager<IdentityRole> roleManager)
+    public AccountController(
+        UserManager<ApiUser> userManager,
+        SignInManager<ApiUser> signinManager,
+        RoleManager<IdentityRole> roleManager
+    )
     {
         _userManager = userManager;
         _signInManager = signinManager;
@@ -38,11 +41,7 @@ public class AccountController : Controller
             return RedirectToAction(nameof(Register));
         }
 
-        ApiUser appUser = new ApiUser
-        {
-            UserName = register.Email,
-            Email = register.Email
-        };
+        ApiUser appUser = new ApiUser { UserName = register.Email, Email = register.Email };
 
         IdentityResult result = await _userManager.CreateAsync(appUser, register.Password);
 

@@ -23,9 +23,9 @@
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.AssemblyInfoInputs.cache
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.AssemblyInfo.cs
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.csproj.CoreCompileInputs.cache
-/home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.csproj.CopyComplete
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.dll
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/obj/Debug/net8.0/refint/MVCAPP.DataAccess.dll
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.pdb
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/obj/Debug/net8.0/ref/MVCAPP.DataAccess.dll
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.sourcelink.json
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.csproj.CopyComplete

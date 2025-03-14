@@ -10,9 +10,9 @@
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.AssemblyInfoInputs.cache
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.AssemblyInfo.cs
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.csproj.CoreCompileInputs.cache
-/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.csproj.CopyComplete
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.dll
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/refint/MVCAPP.Business.dll
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.pdb
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/ref/MVCAPP.Business.dll
 /home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.sourcelink.json
+/home/atillai/RiderProjects/MVCAPP/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.csproj.CopyComplete

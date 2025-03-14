@@ -38,7 +38,7 @@ public class Book
 
             return (new Book(), errors);
         }
-        
+
         if (string.IsNullOrWhiteSpace(authorFullName))
         {
             errors.Add("Author's Fullname Is Empty");

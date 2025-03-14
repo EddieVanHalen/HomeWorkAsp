@@ -17,6 +17,42 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/home/atillai/RiderProjects/MVCAPP/MVCAPP/wwwroot/images/273e9614-ebb9-4678-a0be-60b67726dec3photo_2022-05-03_21-44-08.jpg",
+      "PackagePath": "staticwebassets/images/273e9614-ebb9-4678-a0be-60b67726dec3photo_2022-05-03_21-44-08.jpg"
+    },
+    {
+      "Id": "/home/atillai/RiderProjects/MVCAPP/MVCAPP/wwwroot/images/41519b71-c6c6-40b5-b14e-eecd9bbb87ccphoto_2023-02-09_19-31-12.jpg",
+      "PackagePath": "staticwebassets/images/41519b71-c6c6-40b5-b14e-eecd9bbb87ccphoto_2023-02-09_19-31-12.jpg"
+    },
+    {
+      "Id": "/home/atillai/RiderProjects/MVCAPP/MVCAPP/wwwroot/images/51435cdb-3dc1-4438-b659-4fb5b687303fphoto_2022-05-03_21-44-08.jpg",
+      "PackagePath": "staticwebassets/images/51435cdb-3dc1-4438-b659-4fb5b687303fphoto_2022-05-03_21-44-08.jpg"
+    },
+    {
+      "Id": "/home/atillai/RiderProjects/MVCAPP/MVCAPP/wwwroot/images/58e4616b-5504-4edc-9017-6a2c0b9d269cphoto_2022-05-03_21-44-08.jpg",
+      "PackagePath": "staticwebassets/images/58e4616b-5504-4edc-9017-6a2c0b9d269cphoto_2022-05-03_21-44-08.jpg"
+    },
+    {
+      "Id": "/home/atillai/RiderProjects/MVCAPP/MVCAPP/wwwroot/images/6059c6b9-019e-401c-9666-bf2a7f1cf7caphoto_2022-05-03_21-44-08.jpg",
+      "PackagePath": "staticwebassets/images/6059c6b9-019e-401c-9666-bf2a7f1cf7caphoto_2022-05-03_21-44-08.jpg"
+    },
+    {
+      "Id": "/home/atillai/RiderProjects/MVCAPP/MVCAPP/wwwroot/images/6afdf4ec-2297-4e48-9624-2027419a6635photo_2022-05-03_21-44-08.jpg",
+      "PackagePath": "staticwebassets/images/6afdf4ec-2297-4e48-9624-2027419a6635photo_2022-05-03_21-44-08.jpg"
+    },
+    {
+      "Id": "/home/atillai/RiderProjects/MVCAPP/MVCAPP/wwwroot/images/9030a91c-7cdd-423b-ba17-39974c6b2126photo_2023-02-09_19-31-12.jpg",
+      "PackagePath": "staticwebassets/images/9030a91c-7cdd-423b-ba17-39974c6b2126photo_2023-02-09_19-31-12.jpg"
+    },
+    {
+      "Id": "/home/atillai/RiderProjects/MVCAPP/MVCAPP/wwwroot/images/a0cc1395-1038-4929-8590-d49a340e04c9photo_2023-02-09_19-31-12.jpg",
+      "PackagePath": "staticwebassets/images/a0cc1395-1038-4929-8590-d49a340e04c9photo_2023-02-09_19-31-12.jpg"
+    },
+    {
+      "Id": "/home/atillai/RiderProjects/MVCAPP/MVCAPP/wwwroot/images/bdd2a461-0c58-43c0-80c3-23295900d253photo_2022-05-03_21-44-08.jpg",
+      "PackagePath": "staticwebassets/images/bdd2a461-0c58-43c0-80c3-23295900d253photo_2022-05-03_21-44-08.jpg"
+    },
+    {
       "Id": "/home/atillai/RiderProjects/MVCAPP/MVCAPP/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

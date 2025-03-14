@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using MVCAPP.Areas.Admin.Models;
 using MVCAPP.Domain.Models.Abstractions.Books;
-using MVCAPP.Domain.Models.Abstractions.Writers;
 using MVCAPP.Domain.Models.Entities;
 using MVCAPP.DTOs;
 using MVCAPP.Infrastructure.Abstractions;
@@ -14,13 +14,11 @@ namespace MVCAPP.Areas.Admin.Controllers;
 public class BooksController : Controller
 {
     private readonly IBooksService _booksService;
-    private readonly IWritersService _writersService;
     private readonly IFileManager _fileManager;
 
-    public BooksController(IBooksService booksService, IWritersService writersService, IFileManager fileManager)
+    public BooksController(IBooksService booksService, IFileManager fileManager)
     {
         _booksService = booksService;
-        _writersService = writersService;
         _fileManager = fileManager;
     }
 
@@ -31,7 +29,7 @@ public class BooksController : Controller
     }
 
     [HttpGet]
-    public async Task<ActionResult> Add()
+    public ActionResult Add()
     {
         return View();
     }
@@ -44,10 +42,15 @@ public class BooksController : Controller
         if (request.ImageFile is not null)
         {
             path = await _fileManager.UploadFile(request.ImageFile);
+            Console.WriteLine($"--------------------------- {path}");
         }
-
-        //
-        int result = await _booksService.AddAsync(request.Title, request.AuthorFullName, request.Genre, path);
+        
+        int result = await _booksService.AddAsync(
+            request.Title!,
+            request.AuthorFullName!,
+            request.Genre!,
+            path
+        );
 
         if (result == 0)
         {
@@ -65,55 +68,106 @@ public class BooksController : Controller
 
         if (book.Id == 0)
         {
-            TempData["danger"] = "Book Not Found";
+            TempData["danger"] = "Book Wasn't Found";
             return RedirectToAction(nameof(Index));
         }
 
-        // if (bookWriter.Id == 0)
-        // {
-        //     TempData["danger"] = "Author Not Found";
-        //     return RedirectToAction(nameof(Index));
-        // }
-
-        BookDTO dto  = new BookDTO
+        BookDTO dto = new BookDTO
         {
             Title = book.Title,
             CoverImageUrl = book.CoverImageUrl,
             Genre = book.Genre,
             Id = book.Id,
-            WriterName = book.AuthorFullName
+            WriterName = book.AuthorFullName,
         };
 
         return View(dto);
     }
 
-    // [HttpGet]
-    // public async Task<ActionResult> Edit(int id)
-    // {
-    //     Book book = await _booksService.GetByIdAsync(id);
-    //
-    //     if (book.Id == 0)
-    //     {
-    //         TempData["danger"] = "Book Not Found";
-    //         return RedirectToAction(nameof(Index));
-    //     }
-    //
-    //     return View(book);
-    // }
+    [HttpGet]
+    public async Task<ActionResult> Edit(int id)
+    {
+        Book book = await _booksService.GetByIdAsync(id);
 
-    // [HttpPost]
-    // public async Task<ActionResult> EditAction(int id, string title, string genre, string coverImageUrl)
-    // {
-    //     // Book book = await _booksService.GetByIdAsync(id);
-    //     //
-    //     // if (book.Id == 0)
-    //     // {
-    //     //     TempData["danger"] = "Book Not Found";
-    //     //     return RedirectToAction(nameof(Index));
-    //     // }
-    //     //
-    //     // return View(book);
-    //
-    //     return RedirectToAction(nameof(Index));
-    // }
+        if (book.Id == 0)
+        {
+            TempData["danger"] = "Book Wasn't Found";
+            return RedirectToAction(nameof(Index));
+        }
+
+        BookRequest request = new BookRequest(
+            book.Id,
+            book.Title,
+            book.Genre,
+            book.AuthorFullName,
+            book.CoverImageUrl
+        );
+
+        return View(request);
+    }
+
+    [HttpPost]
+    public async Task<ActionResult> EditAction(BookRequest request)
+    {
+        Book currentBook = await _booksService.GetByIdAsync(request.Id);
+
+        request.CoverImageUrl = currentBook.CoverImageUrl;
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState.Values.ToList());
+        }
+
+        if (request.ImageFile is not null)
+        {
+            request.CoverImageUrl = await _fileManager.UploadFile(request.ImageFile);
+            await _fileManager.DeleteFile(currentBook.CoverImageUrl!);
+        }
+
+        int result = await _booksService.UpdateAsync(
+            request.Id,
+            request.Title!,
+            request.AuthorFullName!,
+            request.Genre!,
+            request.CoverImageUrl
+        );
+
+        if (result == -1)
+        {
+            TempData["danger"] = "Book Wasn't Changed";
+            return RedirectToAction(nameof(Index));
+        }
+
+        TempData["success"] = "Book Was Changed";
+        return RedirectToAction(nameof(Index));
+    }
+
+    [HttpGet]
+    public async Task<ActionResult> Delete(int id)
+    {
+        Book book = await _booksService.GetByIdAsync(id);
+
+        if (book.Id == 0)
+        {
+            TempData["danger"] = "Book Wasn't Found";
+            return RedirectToAction(nameof(Index));
+        }
+        
+        return View(book);
+    }
+
+    [HttpPost]
+    public async Task<ActionResult> DeleteAction(int id)
+    {
+        int result = await _booksService.DeleteAsync(id);
+
+        if (result == -1)
+        {
+            TempData["danger"] = "Book Wasn't Deleted";
+            return RedirectToAction(nameof(Index));
+        }
+        
+        TempData["success"] = "Book Was Deleted";
+        return RedirectToAction(nameof(Index));
+    }
 }

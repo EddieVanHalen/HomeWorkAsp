@@ -10,17 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48520522-372b-44f3-b15c-04eecb7da452" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MVCAPP/Areas/Admin/Views/Songs/Details.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MVCAPP/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MVCAPP/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MVCAPP/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MVCAPP/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MVCAPP/.idea/dataSources/f1ce53d0-c581-4e6e-bf60-e4478aefc723.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MVCAPP/.idea/dataSources/f1ce53d0-c581-4e6e-bf60-e4478aefc723/storage_v2/_src_/database/MVCDb.2C1lBA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MVCAPP/.idea/dataSources/f1ce53d0-c581-4e6e-bf60-e4478aefc723/storage_v2/_src_/database/MVCDb.2C1lBA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MVCAPP/.idea/dataSources/f1ce53d0-c581-4e6e-bf60-e4478aefc723/storage_v2/_src_/database/MVCDb.2C1lBA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MVCAPP/.idea/dataSources/f1ce53d0-c581-4e6e-bf60-e4478aefc723/storage_v2/_src_/database/MVCDb.2C1lBA/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MVCAPP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MVCAPP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP.Business/Services/ArtistsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/Services/ArtistsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP.Business/bin/Debug/net8.0/MVCAPP.Business.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/bin/Debug/net8.0/MVCAPP.Business.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Business/bin/Debug/net8.0/MVCAPP.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/bin/Debug/net8.0/MVCAPP.Business.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Business/bin/Debug/net8.0/MVCAPP.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/bin/Debug/net8.0/MVCAPP.Business.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Business/bin/Debug/net8.0/MVCAPP.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/bin/Debug/net8.0/MVCAPP.Models.dll" afterDir="false" />
@@ -28,6 +19,7 @@
       <change beforePath="$PROJECT_DIR$/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.csproj.CopyComplete" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/obj/Debug/net8.0/MVCAPP.Business.dll" afterDir="false" />
@@ -38,22 +30,19 @@
       <change beforePath="$PROJECT_DIR$/MVCAPP.Business/obj/MVCAPP.Business.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/obj/MVCAPP.Business.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Business/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Business/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP.Business/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Business/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Business/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Business/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/Entities/ArtistEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/Entities/ArtistEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/Entities/Configurations/ArtistEntityConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/Entities/Configurations/ArtistEntityConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/MVCAPP.DataAccess.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/MVCAPP.DataAccess.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/Repositories/ArtistsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/Repositories/ArtistsRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/bin/Debug/net8.0/MVCAPP.DataAccess.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/bin/Debug/net8.0/MVCAPP.DataAccess.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/bin/Debug/net8.0/MVCAPP.DataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/bin/Debug/net8.0/MVCAPP.DataAccess.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/bin/Debug/net8.0/MVCAPP.DataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/bin/Debug/net8.0/MVCAPP.DataAccess.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/bin/Debug/net8.0/MVCAPP.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/bin/Debug/net8.0/MVCAPP.Models.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/bin/Debug/net8.0/MVCAPP.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/bin/Debug/net8.0/MVCAPP.Models.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.csproj.CopyComplete" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/Debug/net8.0/MVCAPP.DataAccess.dll" afterDir="false" />
@@ -64,15 +53,17 @@
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/MVCAPP.DataAccess.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/MVCAPP.DataAccess.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.DataAccess/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP.Models/Models/Abstractions/Artists/IArtistsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/Models/Abstractions/Artists/IArtistsRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP.Models/Models/Abstractions/Artists/IArtistsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/Models/Abstractions/Artists/IArtistsService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP.Models/Models/Entities/Artist.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/Models/Entities/Artist.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP.Models/Models/Abstractions/Writers/IWritersRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP.Models/Models/Abstractions/Writers/IWritersService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP.Models/Models/Entities/Writer.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Models/bin/Debug/net8.0/MVCAPP.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/bin/Debug/net8.0/MVCAPP.Models.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Models/bin/Debug/net8.0/MVCAPP.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/bin/Debug/net8.0/MVCAPP.Models.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.csproj.CopyComplete" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/obj/Debug/net8.0/MVCAPP.Models.dll" afterDir="false" />
@@ -83,31 +74,42 @@
       <change beforePath="$PROJECT_DIR$/MVCAPP.Models/obj/MVCAPP.Models.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/obj/MVCAPP.Models.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Models/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Models/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP.Models/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Models/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP.Models/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP.Models/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP/Areas/Admin/Controllers/SongsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/Areas/Admin/Controllers/SongsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/Controllers/AccountController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP/Controllers/ArtistsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/Controllers/ArtistsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP/Controllers/SongsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/Controllers/SongsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP/DTOs/ArtistDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/DTOs/ArtistDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/Areas/Admin/Controllers/BooksController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/Areas/Admin/Controllers/BooksController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/Controllers/BooksController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/Controllers/BooksController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP/Views/Artists/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/Views/Artists/Details.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.Business.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.Business.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.DataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.DataAccess.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.DataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.DataAccess.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.Models.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.Models.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/bin/Debug/net8.0/MVCAPP.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/MVCAPP.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/apphost" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/ref/MVCAPP.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/ref/MVCAPP.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/refint/MVCAPP.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/refint/MVCAPP.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/staticwebassets.pack.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/staticwebassets/msbuild.MVCAPP.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/staticwebassets/msbuild.MVCAPP.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/staticwebassets/msbuild.build.MVCAPP.props" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/Debug/net8.0/staticwebassets/msbuild.build.MVCAPP.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/obj/MVCAPP.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/MVCAPP.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/obj/MVCAPP.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/MVCAPP.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAPP/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAPP/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAPP/obj/rider.project.restore.info" afterDir="false" />
     </list>
@@ -138,7 +140,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:EddieVanHalen/MVCSpotify.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/EddieVanHalen/HomeWorkAsp.git&quot;,
     &quot;accountId&quot;: &quot;38655a3d-f317-4d74-81c2-aefd22d98c10&quot;
   }
 }</component>
@@ -161,34 +163,38 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2tqclKiXyBogF9wZaq8dTpcnjbF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.MVCAPP: Development.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/atillai/Documents/MVCShop&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.MVCAPP: Development.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/atillai/Documents/MVCShop",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;yaml&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "yaml"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="MVCAPP: Development" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MVCAPP/MVCAPP.csproj" />
@@ -220,7 +226,8 @@
       <workItem from="1741162399594" duration="10203000" />
       <workItem from="1741271669121" duration="20723000" />
       <workItem from="1741671417336" duration="3458000" />
-      <workItem from="1741682085473" duration="686000" />
+      <workItem from="1741682085473" duration="25895000" />
+      <workItem from="1741832290922" duration="406000" />
     </task>
     <servers />
   </component>
