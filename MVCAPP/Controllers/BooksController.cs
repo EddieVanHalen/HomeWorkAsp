@@ -18,16 +18,14 @@ public class BooksController : Controller
     [HttpGet]
     public async Task<ActionResult> Index(string? filter, int itemsPerPage = 6, int page = 1)
     {
-        (List<Book> books, int totalItems) = await _booksService.GetAllAsync(itemsPerPage, page);
-        
-        Console.Write($"-------------------------- Total Items: {totalItems}\n");
-        Console.Write($"-------------------------- Total Pages: {(int)Math.Ceiling(totalItems / (double)itemsPerPage)}\n");
+        (List<Book> books, int totalItems) = await _booksService.GetAllAsync(filter, itemsPerPage, page);
     
         BookDTO dto = new BookDTO()
         {
             Books = books,
             PageInfo = new PageInfo()
             {
+                Query = filter,
                 CurrentPage = page,
                 ItemsPerPage = itemsPerPage,
                 TotalItems = totalItems,

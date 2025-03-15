@@ -32,6 +32,7 @@
       <_ContentIncludedByDefault Remove="Views\Bands\Index.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Home\Privacy.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Components\Index\Default.cshtml" />
     </ItemGroup>
 
     <ItemGroup>

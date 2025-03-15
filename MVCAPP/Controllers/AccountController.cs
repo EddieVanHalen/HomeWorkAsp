@@ -56,11 +56,19 @@ public class AccountController : Controller
             return RedirectToAction(nameof(Register));
         }
 
-        await _roleManager.CreateAsync(new IdentityRole("Admin"));
-        await _userManager.AddToRoleAsync(appUser, "Admin");
+        if (!await _roleManager.RoleExistsAsync("User"))
+        {
+            await _roleManager.CreateAsync(new IdentityRole("User"));
+        }
 
-        TempData["success"] = "User added successfully";
-        return RedirectToAction("Index", "Songs");
+        await Login(new LoginDTO()
+        {
+            Email = register.Email,
+            Password = register.Password
+        });
+        
+        TempData["success"] = "User Registered Successfully";
+        return RedirectToAction("Index", "Books");
     }
 
     #endregion
@@ -104,6 +112,27 @@ public class AccountController : Controller
         TempData["success"] = "User Signed In successfully";
         return RedirectToAction("Index", "Books");
     }
+
+    #endregion
+
+    #region Log Out
+
+    public async Task<IActionResult> Logout() 
+    {
+        await _signInManager.SignOutAsync();
+        TempData["success"] = "User Logged out successfully";
+        return RedirectToAction("Index", "Books");
+    }
+
+    #region Access Denied
+
+    public IActionResult AccessDenied() 
+    {
+        return View();
+    }
+
+
+    #endregion
 
     #endregion
 }

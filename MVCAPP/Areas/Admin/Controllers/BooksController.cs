@@ -6,6 +6,7 @@ using MVCAPP.Domain.Models.Abstractions.Books;
 using MVCAPP.Domain.Models.Entities;
 using MVCAPP.DTOs;
 using MVCAPP.Infrastructure.Abstractions;
+using MVCAPP.Models;
 
 namespace MVCAPP.Areas.Admin.Controllers;
 
@@ -23,11 +24,24 @@ public class BooksController : Controller
     }
 
     [HttpGet]
-    public async Task<ActionResult> Index()
+    public async Task<ActionResult> Index(string? filter, int itemsPerPage = 6, int page = 1)
     {
-        // return View(await _booksService.GetAllAsync());
-
-        return null;
+        (List<Book> books, int totalItems) = await _booksService.GetAllAsync(filter, itemsPerPage, page);
+        
+        BookDTO dto = new BookDTO()
+        {
+            Books = books,
+            PageInfo = new PageInfo()
+            {
+                Query = filter,
+                CurrentPage = page,
+                ItemsPerPage = itemsPerPage,
+                TotalItems = totalItems,
+                TotalPages = (int)Math.Ceiling(totalItems / (double)itemsPerPage)
+            }
+        };
+        
+        return View(dto);
     }
 
     [HttpGet]
@@ -44,7 +58,6 @@ public class BooksController : Controller
         if (request.ImageFile is not null)
         {
             path = await _fileManager.UploadFile(request.ImageFile);
-            Console.WriteLine($"--------------------------- {path}");
         }
         
         int result = await _booksService.AddAsync(

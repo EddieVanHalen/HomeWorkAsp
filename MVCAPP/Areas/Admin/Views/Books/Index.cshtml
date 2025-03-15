@@ -1,6 +1,7 @@
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.AspNetCore.Mvc.TagHelpers
 @using MVCAPP.Domain.Models.Entities
-@model List<MVCAPP.Domain.Models.Entities.Book>
+@model MVCAPP.DTOs.BookDTO
 
 @{
     ViewBag.Title = "Index";
@@ -10,7 +11,8 @@
 @await Html.PartialAsync("_AlertPartialView")
 
 <style>
-    .album-card .card-img-top, .song-card .card-img-top {
+    .album-card .card-img-top,
+    .song-card .card-img-top {
         display: block;
         margin: 0 auto;
         object-fit: cover;
@@ -22,7 +24,7 @@
 <div class="container my-5">
     <h1>Songs</h1>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        @foreach (Book book in @Model)
+        @foreach (Book book in @Model.Books)
         {
             <div class="col">
                 <div class="card mt-4 song-card" style="width: 18rem;">
@@ -35,5 +37,49 @@
                 </div>
             </div>
         }
+    </div>
+
+    <div class="mt-5">
+        <ul class="pagination">
+            @if (Model.PageInfo.CurrentPage - 1 >= 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-controller="Books" asp-action="Index"
+                       asp-route-page="@(Model.PageInfo.CurrentPage - 1)">&laquo;</a>
+                </li>
+            }
+
+
+            @for (int i = 1; i <= Model.PageInfo.TotalPages; i++)
+            {
+                if (i == Model.PageInfo.CurrentPage)
+                {
+                    <li class="page-item active">
+                        <a class="page-link" asp-controller="Books" asp-action="Index" asp-route-page="@i">
+                            @i
+                        </a>
+                    </li>
+                }
+                else
+                {
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Books" asp-action="Index" asp-route-page="@i">
+                            @i
+                        </a>
+                    </li>
+                }
+            }
+
+            @{
+                if (Model.PageInfo.CurrentPage + 1 <= Model.PageInfo.TotalPages)
+                {
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Books" asp-action="Index"
+                           asp-route-page="@(Model.PageInfo.CurrentPage + 1)">&raquo;</a>
+                    </li>
+                }
+            }
+
+        </ul>
     </div>
 </div>
